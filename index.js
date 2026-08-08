@@ -16,6 +16,10 @@ app.get("/", (req, res) => {
     res.json({ message: "Welcome to Express Jason!"})
 });
 
+app.get("/test", (req, res) => {
+    res.json({ message: "Welcome to the Test path!" })
+})
+
 app.listen(PORT, () => {
     console.log("Listening to PORT: " + PORT);
 })
